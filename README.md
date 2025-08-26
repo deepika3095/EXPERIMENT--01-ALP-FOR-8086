@@ -1,7 +1,7 @@
 # EXPERIMENT--01-ALP-FOR-8086
-Name :
-Roll no 
-Date of experiment :
+# Name :
+# Roll no 
+# Date of experiment :
 
 
 
@@ -78,20 +78,58 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 ## Programs for arithmetic  operations
 
 ## Addition  of 8 bit ALP 
-
-
-
+```
+MOV CL,00
+MOV AX,[3001H]
+MOV BX,[3003H]
+ADD AX,BX
+JNC Loop
+INC CL
+Loop:
+MOV [3005H],AX
+MOv [3007H],CL
+HLT
+```
 ## Output  
+<img width="1919" height="1023" alt="Screenshot 2025-08-22 153640" src="https://github.com/user-attachments/assets/d0524c53-2a0f-4632-a46b-16575bd556e2" />
  
 ## Subtraction   of 8 bit numbers  ALP 
- 
+```
+MOV CL,00
+MOV AX,[3001H]
+MOV BX,[3003H]
+SUB AX,BX
+JNC Loop
+INC CL  
+NOT AX
+INC AX
+Loop:
+MOV [3005H],AX
+MOV [3007H],CL
+HLT
+``` 
 ## Output  
-## Multiplication alp 
- ## Output  
+<img width="1919" height="1010" alt="Screenshot 2025-08-22 160747" src="https://github.com/user-attachments/assets/3f8e7862-2a0e-454c-9f59-cacbdb080c7e" />
 
+## Multiplication alp 
+MOV AX,[3001H]
+MOV BX,[3003H]
+MUL BX
+MOV [3005H],AX
+MOV [3007H],DX
+HLT
+## Output  
+<img width="1919" height="1004" alt="Screenshot 2025-08-22 161940" src="https://github.com/user-attachments/assets/51ab719d-a7c8-44ef-8efd-f63312b93eb5" />
 
 ## Division alp 
-
+```
+MOV AX,[3001H]
+MOV BX,[3003H]
+DIV BX
+MOV [3005H],AX
+MOV [3007H],DX
+HLT
+```
 ## Output  
 
 
