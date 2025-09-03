@@ -1,7 +1,7 @@
 # EXPERIMENT--01-ALP-FOR-8086
-# Name :
-# Roll no 
-# Date of experiment :
+# Name : DEEPIKA R
+# Roll no: 212223230038 
+# Date of experiment : 29-08-25
 
 
 
@@ -131,10 +131,103 @@ MOV [3007H],DX
 HLT
 ```
 ## Output  
+<img width="1920" height="1080" alt="Screenshot (46)" src="https://github.com/user-attachments/assets/fe953789-ca72-4ae4-863a-24587b193cd3" />
+
+## Program for logical operators
+## AND:
+```
+MOV AX,[3001H]
+MOV BX,[3003H]
+AND AX,BX
+MOV [3005H],AX
+HLT
+```
+## OUTPUT
+
+<img width="1920" height="1080" alt="Screenshot (52)" src="https://github.com/user-attachments/assets/cff6fa13-9567-4a06-982c-d19ce141d252" />
+
+## NAND:
+
+```
+MOV AX,[3001H]
+MOV BX,[3003H]
+AND AX,BX
+NOT AX
+MOV [3005H],AX
+HLT
+```
+## OUTPUT
+
+<img width="1920" height="1080" alt="Screenshot (53)" src="https://github.com/user-attachments/assets/67318254-8f7b-4bc0-b5c7-41b7c9f477d8" />
+
+
+## OR
+```
+MOV AX,[3001H]
+MOV BX,[3003H]
+OR AX,BX
+MOV [3005H],AX
+HLT
+```
+## OUTPUT
+
+<img width="1920" height="1080" alt="Screenshot (48)" src="https://github.com/user-attachments/assets/19bbbdcd-894f-40e4-88e4-233724f77302" />
+
+## NOR 
+```
+MOV AX,[3001H]
+MOV BX,[3003H]
+OR AX,BX
+NOT AX
+MOV [3005H],AX
+HLT
+```
+## OUTPUT
+
+<img width="1920" height="1080" alt="Screenshot (48)" src="https://github.com/user-attachments/assets/a48b4019-70b5-4308-bfbf-4bca4da1943d" />
+
+## NOT 
+```
+MOV AX,[3001H]
+NOT AX
+MOV [3003H],AX
+HLT
+```
+## OUTPUT 
+
+<img width="1920" height="1080" alt="Screenshot (49)" src="https://github.com/user-attachments/assets/cf0a118b-3397-45b0-8796-04a375b4c43b" />
+
+## XOR
+```
+MOV AX,[3001H]
+MOV BX,[3003H]
+XOR AX,BX
+MOV [3005H],AX
+HLT
+```
+## OUTPUT
+
+<img width="1920" height="1080" alt="Screenshot (50)" src="https://github.com/user-attachments/assets/0e1f9dc8-f252-4103-a5d1-86a925ad3c82" />
+
+## XNOR
+```
+MOV AX,[3001H]
+MOV BX,[3003H]
+XOR AX,BX
+NOT AX
+MOV [3005H],AX
+HLT
+```
+## OUTPUT
+
+<img width="1920" height="1080" alt="Screenshot (51)" src="https://github.com/user-attachments/assets/30460296-3f89-4027-a3f2-119a5b03ed39" />
+
+
+
 
 
 ## Result :
- 
+ The program is executed successfully
 
 
 
