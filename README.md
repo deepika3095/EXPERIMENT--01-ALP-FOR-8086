@@ -112,12 +112,14 @@ HLT
 <img width="1919" height="1010" alt="Screenshot 2025-08-22 160747" src="https://github.com/user-attachments/assets/3f8e7862-2a0e-454c-9f59-cacbdb080c7e" />
 
 ## Multiplication alp 
+```
 MOV AX,[3001H]
 MOV BX,[3003H]
 MUL BX
 MOV [3005H],AX
 MOV [3007H],DX
 HLT
+```
 ## Output  
 <img width="1919" height="1004" alt="Screenshot 2025-08-22 161940" src="https://github.com/user-attachments/assets/51ab719d-a7c8-44ef-8efd-f63312b93eb5" />
 
