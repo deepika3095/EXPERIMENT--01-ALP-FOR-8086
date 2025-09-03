@@ -229,7 +229,7 @@ HLT
 
 
 ## Result :
- The program is executed successfully
+ The program has been successfully executed
 
 
 
