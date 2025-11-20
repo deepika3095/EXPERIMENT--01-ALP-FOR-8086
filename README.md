@@ -1,7 +1,7 @@
 # EXPERIMENT--01-ALP-FOR-8086
-# Name : DEEPIKA R
-# Roll no: 212223230038 
-# Date of experiment : 29-08-25
+# Name :  Deepika R
+# Roll no : 212223230038
+# Date of experiment : 29/08/2025
 
 
 
@@ -87,12 +87,15 @@ JNC Loop
 INC CL
 Loop:
 MOV [3005H],AX
-MOv [3007H],CL
+MOV [3007H],CL
 HLT
 ```
+
+
+
 ## Output  
-<img width="1919" height="1023" alt="Screenshot 2025-08-22 153640" src="https://github.com/user-attachments/assets/d0524c53-2a0f-4632-a46b-16575bd556e2" />
- 
+ <img width="2876" height="1798" alt="Screenshot 2025-08-22 153906" src="https://github.com/user-attachments/assets/5663c0c5-3c58-4fff-8e03-78ec4968dd05" />
+
 ## Subtraction   of 8 bit numbers  ALP 
 ```
 MOV CL,00
@@ -107,9 +110,10 @@ Loop:
 MOV [3005H],AX
 MOV [3007H],CL
 HLT
-``` 
-## Output  
-<img width="1919" height="1010" alt="Screenshot 2025-08-22 160747" src="https://github.com/user-attachments/assets/3f8e7862-2a0e-454c-9f59-cacbdb080c7e" />
+```
+ 
+## Output 
+<img width="2879" height="1799" alt="Screenshot 2025-08-22 160807" src="https://github.com/user-attachments/assets/912b0228-c2a4-40d5-bb9c-139de3ddc308" />
 
 ## Multiplication alp 
 ```
@@ -117,11 +121,13 @@ MOV AX,[3001H]
 MOV BX,[3003H]
 MUL BX
 MOV [3005H],AX
-MOV [3007H],DX
+MOV [3007H],DX
 HLT
 ```
-## Output  
-<img width="1919" height="1004" alt="Screenshot 2025-08-22 161940" src="https://github.com/user-attachments/assets/51ab719d-a7c8-44ef-8efd-f63312b93eb5" />
+ ## Output  
+ 
+<img width="2879" height="1799" alt="Screenshot 2025-08-22 162120" src="https://github.com/user-attachments/assets/7bc3af38-f8d7-4eb4-b1fd-3d010c9a1272" />
+
 
 ## Division alp 
 ```
@@ -129,39 +135,28 @@ MOV AX,[3001H]
 MOV BX,[3003H]
 DIV BX
 MOV [3005H],AX
-MOV [3007H],DX
+MOV [3007H],DX
 HLT
 ```
+
+
 ## Output  
-<img width="1920" height="1080" alt="Screenshot (46)" src="https://github.com/user-attachments/assets/fe953789-ca72-4ae4-863a-24587b193cd3" />
+<img width="2879" height="1799" alt="Screenshot 2025-08-29 152118" src="https://github.com/user-attachments/assets/02bf1fa9-bb95-4eef-a424-9f9ade7da4d7" />
 
-## Program for logical operators
-## AND:
+## Programs for logical  operations
+
+## AND
 ```
 MOV AX,[3001H]
 MOV BX,[3003H]
 AND AX,BX
 MOV [3005H],AX
 HLT
-```
-## OUTPUT
-
-<img width="1920" height="1080" alt="Screenshot (52)" src="https://github.com/user-attachments/assets/cff6fa13-9567-4a06-982c-d19ce141d252" />
-
-## NAND:
 
 ```
-MOV AX,[3001H]
-MOV BX,[3003H]
-AND AX,BX
-NOT AX
-MOV [3005H],AX
-HLT
-```
-## OUTPUT
+## Output
 
-<img width="1920" height="1080" alt="Screenshot (53)" src="https://github.com/user-attachments/assets/67318254-8f7b-4bc0-b5c7-41b7c9f477d8" />
-
+<img width="2875" height="1799" alt="Screenshot 2025-08-29 152630" src="https://github.com/user-attachments/assets/11ef3c33-fa82-4370-b74d-10b0cdba5f0a" />
 
 ## OR
 ```
@@ -170,12 +165,25 @@ MOV BX,[3003H]
 OR AX,BX
 MOV [3005H],AX
 HLT
+
 ```
-## OUTPUT
+## Output
+<img width="2879" height="1799" alt="Screenshot 2025-08-29 153032" src="https://github.com/user-attachments/assets/7341cc37-f4f0-4f9b-89ba-cb08ac1b6b64" />
 
-<img width="1920" height="1080" alt="Screenshot (48)" src="https://github.com/user-attachments/assets/19bbbdcd-894f-40e4-88e4-233724f77302" />
+## NAND
+```
+MOV AX,[3001H]
+MOV BX,[3003H]
+AND AX,BX
+NOT AX
+MOV [3005H],AX
+HLT
 
-## NOR 
+```
+## Output
+<img width="2879" height="1799" alt="Screenshot 2025-08-29 153517" src="https://github.com/user-attachments/assets/7176cbf9-2128-4e8e-9602-e7162250ee5a" />
+
+## NOR
 ```
 MOV AX,[3001H]
 MOV BX,[3003H]
@@ -183,21 +191,24 @@ OR AX,BX
 NOT AX
 MOV [3005H],AX
 HLT
+
 ```
-## OUTPUT
+## Output
+<img width="2879" height="1799" alt="Screenshot 2025-08-29 153412" src="https://github.com/user-attachments/assets/85a70965-09ca-4e9f-9e9f-37ae076c19ac" />
 
-<img width="1920" height="1080" alt="Screenshot (48)" src="https://github.com/user-attachments/assets/a48b4019-70b5-4308-bfbf-4bca4da1943d" />
-
-## NOT 
+## NOT
 ```
 MOV AX,[3001H]
 NOT AX
 MOV [3003H],AX
 HLT
-```
-## OUTPUT 
 
-<img width="1920" height="1080" alt="Screenshot (49)" src="https://github.com/user-attachments/assets/cf0a118b-3397-45b0-8796-04a375b4c43b" />
+```
+
+
+## Output
+<img width="2879" height="1799" alt="Screenshot 2025-08-29 154448" src="https://github.com/user-attachments/assets/1b2775c4-e55c-4af3-8cec-05d0a99e4fe4" />
+
 
 ## XOR
 ```
@@ -206,10 +217,14 @@ MOV BX,[3003H]
 XOR AX,BX
 MOV [3005H],AX
 HLT
-```
-## OUTPUT
 
-<img width="1920" height="1080" alt="Screenshot (50)" src="https://github.com/user-attachments/assets/0e1f9dc8-f252-4103-a5d1-86a925ad3c82" />
+
+```
+
+
+## Output
+<img width="2876" height="1799" alt="Screenshot 2025-08-29 154825" src="https://github.com/user-attachments/assets/d7019d8a-8ab0-4df2-8b57-48e83f6cf752" />
+
 
 ## XNOR
 ```
@@ -220,16 +235,20 @@ NOT AX
 MOV [3005H],AX
 HLT
 ```
-## OUTPUT
 
-<img width="1920" height="1080" alt="Screenshot (51)" src="https://github.com/user-attachments/assets/30460296-3f89-4027-a3f2-119a5b03ed39" />
+## Output
+<img width="2879" height="1795" alt="Screenshot 2025-08-29 155003" src="https://github.com/user-attachments/assets/dc893205-7ff2-42ec-9d91-15e396021e6d" />
+
+
 
 
 
 
 
 ## Result :
- The program has been successfully executed
+We have executed ALP on fundamental arithmetic and logical operations successfully!!!
+
+ 
 
 
 
